@@ -1,0 +1,155 @@
+html,body {
+	width: 100%;
+	height: 600px;
+}
+
+.container {
+    background-color: #ED5C25;
+    height: 600px;
+    width: 400px;
+    position: relative;
+    left: 50%;  
+    top: 48%;
+    margin-top: -293px;
+	margin-left: -200px;
+    font-family: AdornS Serif Regular;
+}
+.background img{
+    height: 100%;
+}
+
+.top-left {
+  position: absolute;
+  top: 110px;
+  right: 90px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .top-right{
+        top:90px;
+        left: 50px;
+    }
+}
+
+.top-left p{
+   
+    color: black;
+    background-color: ;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ 
+}
+
+@media screen and (max-width: 1500px) {
+    .centered{
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.centered img{
+    width: 350px;
+    height: 380px;
+    margin-bottom:123px;
+    transform: rotate(0deg);
+    animation: img1 20s infinite;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes img1 {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate;(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@media screen and (max-width: 1500px) {
+.bottom {
+    position: absolute;
+    bottom: 70px;
+    right: 25%;
+    left: 50%;
+    transform: translate(-25%, -75%);
+}
+}
+
+.bottom p {
+    position:  absolute;
+    font-size: 20px;
+    animation-duration: 2s;     
+}
+
+.bottom p:hover{
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveToRight {
+  0% {
+        transform: translateX(0px);
+        opacity: 0;
+      }
+      50% {
+        transform: translateX(0px);
+        opacity: 50;
+      }
+      100% {
+        transform: translateX(300px);
+          opacity: 0;
+      }
+    }
+
+.bottom-left {
+    position: absolute;
+    display: flex;
+    bottom: 1px;
+    right: 0px;
+    left: 1px;
+    animation: shake 10s infinite;
+    
+}
+
+
+.bottom-left img {
+    width:400px;
+}
+
+
+.bottom-right {
+    position: absolute;
+    display: flex;
+    bottom: 1px;
+    right: 1px;
+    animation: shake 10s infinite;
+    
+}
+
+
+.bottom-right img {
+    width:400px;
+}
+  
+    
+ @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
